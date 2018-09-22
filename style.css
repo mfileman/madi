@@ -79,9 +79,12 @@ body {
 .content{
   font-family: sans-serif;
   margin: auto;
+  font-size: 20px;
   text-align: center;
-  width:40%;
-  color:teal;
+  font-weight: bold;
+  text-transform: uppercase;
+  width:70%;
+  color:black;
 }
 
 .content a{
