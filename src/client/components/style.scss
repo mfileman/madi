@@ -1,0 +1,208 @@
+//---------------------------VARIABLES---------------------------
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Work+Sans');
+
+@font-face {
+  font-family: 'title';
+  src: url('../assets/fonts/pixel12x10/Pixel12x10.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+  $headerHeight: -3vw;
+
+  //GLOBAL RULES
+  a{
+    text-decoration: none;
+  }
+
+  a:hover{
+    cursor: pointer;
+  }
+
+  // MIXINS
+  @mixin smallerBox($back-color, $accent, $textColor, $font) {
+    background: $back-color;
+    
+    color:$textColor;
+    font-family: $font;
+    font-size: 20px;
+    text-align: center;
+    
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1.75em 0px 0px 0px;
+    border-color: $accent;
+
+    margin:5%;
+    margin-top:2%;
+    margin-bottom:2%;
+    // margin-bottom: 2%;
+     padding: 3%;
+     padding-top:0%;
+    // padding-bottom: 1%;
+  }
+
+@mixin biggerBox($back-color, $accent){
+  background: $back-color;
+  padding-right:10%;
+  padding-left:10%;
+  padding-top: 0.1%; 
+  padding-bottom: 0.1%; 
+  font-size: 20px;
+
+  text-align: center;
+
+  h3{
+    height: inherit;
+    font-size: 20px;
+    color: $accent;
+  }
+    
+}
+
+@mixin titleNav($background, $titleColor, $titleHover ){
+  background: $background;
+  width:100%;
+  height: $headerHeight; //HOW TALL NAV BAR
+  font-family: menlo;
+  text-align: center;
+
+  top: 0; /* Position the navbar at the top of the page */
+  position: fixed; /* Set the navbar to fixed position */
+
+  h1 {
+    font-family: 'title';
+    letter-spacing: 2vw;
+    font-size: 50px;
+    color:$titleColor;
+    transition: color 1s;
+    margin-bottom:1%;
+    width: 100%;
+
+  }
+
+  h1:hover {
+    color: $titleHover;
+    cursor: pointer;
+  }
+  
+  a{
+    color: inherit;
+  }
+}
+
+@mixin resumeList($titleColor) {
+  h3{
+    color:$titleColor;  
+    margin-top: 1.75em;
+  }
+  
+  ul{
+      list-style: none;
+      padding-inline-start: 0px;
+      margin: 5px;
+
+      li{
+          padding: 3px;
+      }
+  }
+}
+
+
+//---------------------------NAVIGATION---------------------------
+
+.nav-wrapper-light {
+  @include titleNav(rgb(253, 242, 223), cornflowerblue, blue);
+  display: flex;
+  flex-direction: row;
+}
+  
+.nav-bar{
+  width: 5%;
+  align-items: center;
+  // padding-top: 5vh;
+  // padding-right: 5vw;
+
+}
+
+.nav-wrapper-dark{
+  @include titleNav(rgb(39, 0, 43), rgb(42, 212, 0), darkcyan);
+}
+
+
+//---------------------------RESUME---------------------------
+
+
+.res-wrapper-light{
+  @include biggerBox(rgb(255, 211, 218), rgb(223, 112, 112)) ; 
+  h3{
+    margin-bottom:0%;
+  }
+}
+.res-wrapper-dark{
+  @include biggerBox( rgb(0, 22, 63), darkcyan );
+}
+
+
+.res-block-light{
+  @include smallerBox(rgb(255, 238, 240), lightcoral, gray, Work Sans);
+  @include resumeList(lightcoral);
+}
+
+.res-block-dark{
+  @include smallerBox(rgb(0, 0, 0), rgb(143, 143, 143), rgb(15, 177, 0), menlo);
+  @include resumeList(darkseagreen);
+}
+
+
+
+
+
+//---------------------------UPDATES---------------------------
+
+.update-wrapper-light{
+  
+    @include biggerBox(thistle, rgb(190, 87, 190));
+}
+
+.update-wrapper-dark{
+  @include biggerBox(rgb(0, 41, 37) , darkcyan);
+}
+
+
+
+.update-section-light{
+  
+    @include smallerBox(rgb(253, 239, 253), rgb(212, 142, 210), gray, Work Sans);
+}
+
+.update-section-dark{
+  @include smallerBox(rgb(0, 0, 0),  rgb(143, 143, 143), rgb(15, 177, 0), menlo);
+}
+
+
+
+
+
+//---------------------------BIO---------------------------
+
+.bio-wrapper-light{
+  
+  @include biggerBox(rgb(198, 223, 221), rgb(69, 178, 197));
+}
+
+.bio-wrapper-dark{
+@include biggerBox(rgb(7, 61, 41) , darkcyan);
+}
+
+
+
+.bio-section-light{
+
+  @include smallerBox(rgb(234, 247, 243), rgb(207, 230, 187), gray, Work Sans);
+}
+
+.bio-section-dark{
+@include smallerBox(rgb(0, 0, 0),  rgb(143, 143, 143), rgb(15, 177, 0), menlo);
+}
+
+
