@@ -1,4 +1,4 @@
-import React, { Component, HashRouter, Route, Link} from 'react';
+import React, { Component } from 'react';
  import '../../components/style.scss';
 import Nav from "../../components/Nav";
 import Resume from "../../components/Resume";
@@ -30,9 +30,6 @@ class App extends Component {
 
     var top = {
       marginTop: '180px',
-    };
-    var one = {
-      
     };
 
     var bio = {
