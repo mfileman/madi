@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/mfileman.github.io/precache-manifest.4c04c8e46ccc3ccc5af53eecf5beb279.js"
+  "/madi/precache-manifest.c2faf1219c037e0faf276ef75aa06bde.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/mfileman.github.io/index.html", {
+workbox.routing.registerNavigationRoute("/madi/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
