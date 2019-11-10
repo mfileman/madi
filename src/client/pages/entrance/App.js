@@ -136,7 +136,7 @@ class App extends Component {
         
         <Update 
           theme = {this.state.theme}
-          content1="My resume as of November 9th 2019" 
+          content1="My resume as of November 2019" 
           content2={<a target="_blank" href='https://docs.google.com/document/d/1JsXdI5q6zJF1N8h1vMu_yH-wQRndr1BzR78cUpHTak8/edit?usp=sharing' download>dwnld here.</a>}
           content3=
             {<iframe src="https://docs.google.com/document/d/e/2PACX-1vSIRcmrHaZQtEMLh1rRDWE4WAdbr_aXmRQJP4JYarDMheB87dSeL9sp3NvUzrAo9VM5HCO9UKutplwT/pub?embedded=true"
