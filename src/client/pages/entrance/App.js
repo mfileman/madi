@@ -32,9 +32,6 @@ class App extends Component {
       marginTop: '180px',
     };
 
-    var bio = {
-      
-    };
 
     let courses =[
                   {title: "Operating Systems", lang: "C, C++, Reptilian (Android / Linux Hybrid)"}, 
