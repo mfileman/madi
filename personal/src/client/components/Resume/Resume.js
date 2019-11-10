@@ -1,76 +1,95 @@
 import React, { Component } from 'react';
-import './Resume.css';
+// import '../light.scss';
+import download  from "../../assets/images/download_icon.png"
 
 class Resume extends Component {
-
   
 
   render() {
-    //   var go = {color: 'orange', textDecoration: 'none'}
-      var gators = {color: 'blue', textDecoration: 'none'};
+      var gators = {color: 'RoyalBlue', textDecoration: 'none'};
       var tiny = {fontSize: "12px"};
       var tinyButBig = {fontSize: "11px", textTransform: 'uppercase'}
 
       var courses_formatted = this.props.relevant_courses.map(function(course){
-        return <li>{course.title} <b style={tinyButBig}>{course.lang}</b></li>;
+        return <li key = {course.title}>{course.title} <b style={tinyButBig}>{course.lang}</b></li>;
       })
 
       var exp_formatted = this.props.experience.map(function(exp){
-        return <li>{exp.title} <b style={tinyButBig}>{exp.desc}</b></li>;
+        return <li key = {exp.title}>{exp.title} <b style={tinyButBig}>{exp.desc}</b></li>;
       })
       var involve_formatted = this.props.involvement.map(function(volv){
-        return <li>{volv.title} <b style={tinyButBig}>{volv.desc}</b></li>;
+        return <li key = {volv.title}>{volv.title} <b style={tinyButBig}>{volv.desc}</b></li>;
       })
       var projects_formatted = this.props.projects.map(function(project){
-        return <li>{project.title} <b style={tinyButBig}>{project.lang}</b></li>;
+        return <li key ={project.title}><a href={project.desc}>{project.title}</a> <b style={tinyButBig}>{project.lang}</b></li>;
       })
       var tech_formatted = this.props.technology.map(function(tec){
-        return <li>{tec.name} <i style={tinyButBig}> {tec.lvl}</i> </li>;
+        return <li key = {tec.name} >{tec.name} <i style={tinyButBig}> {tec.lvl}</i> </li>;
       })
 
 
+    var wrapperBase = "res-wrapper"
+    var blockBase = "res-block"
+    var wrapper = "";
+    var block = ""
+
+    if(this.props.theme){
+      wrapper = wrapperBase+ '-light'
+      block = blockBase+ '-light'
+    }
+    else{
+      wrapper = wrapperBase+ '-dark'
+      block = blockBase+ '-dark'
+    }
+
     return (
-      <div className="res-wrapper">
-        <div className="res-block">
-            {/* <h1>Resume</h1> */}
 
-            {/* EDUCATION */}
-            <h2>Education</h2>
-            {this.props.year} Year Computer Science Student <span style = {tiny}> with a minor in {this.props.minor}</span> at the <a href="http://www.ufl.edu/" target="_blank" style={gators}> University of Florida </a>
+      
+      <div className={wrapper}>
+        <h3> CV </h3>
+        {/* <img src={download} alt="download" height="32" width="32"/> */}
 
+      
 
-            {/* COURSEWORK */}
-            <h2>Relevant Coursework</h2>
-            <ul>
-                {courses_formatted}
-            </ul>
+        <div className={block}>
+          {/* EDUCATION */}
+          <h3>Education</h3>
+          {this.props.year} Year Computer Science Student <span style = {tiny}> with a minor in {this.props.minor}</span> at the <a href="http://www.ufl.edu/" rel="noopener noreferrer" target="_blank" style={gators}> University of Florida </a>
 
 
-            {/* EXPERIENCE  */}
-            <h2>Experience</h2>
-            <ul>
-                {exp_formatted}
-            </ul>
+          {/* COURSEWORK */}
+          <h3>Relevant Coursework</h3>
+          <ul>
+              {courses_formatted}
+          </ul>
 
 
-            {/* INVOLVEMENT  */}
-            <h2>Involvement</h2>
-            <ul>
-               {involve_formatted}
-                
-            </ul>
+          {/* EXPERIENCE  */}
+          <h3>Experience</h3>
+          <ul>
+              {exp_formatted}
+          </ul>
 
-            {/* PROJECTS  */}
-            <h2>Projects</h2>
-            <ul>
-              {projects_formatted} 
-            </ul>
 
-            {/* TECHNOLOGIES  */}
-            <h2>Technologies</h2>
-            <ul>
-              {tech_formatted} 
-            </ul>
+          {/* INVOLVEMENT  */}
+          <h3>Involvement</h3>
+          <ul>
+              {involve_formatted}
+              
+          </ul>
+
+          {/* PROJECTS  */}
+          <h3>Projects</h3>
+          <ul>
+            {projects_formatted} 
+          </ul>
+
+          {/* TECHNOLOGIES  */}
+          <h3>Technologies</h3>
+          <ul>
+            {tech_formatted} 
+          </ul>
+          
         </div>
 
 
