@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-// import '../light.scss';
-import download  from "../../assets/images/download_icon.png"
 
 class Resume extends Component {
   
@@ -47,7 +45,6 @@ class Resume extends Component {
       
       <div className={wrapper}>
         <h3> CV </h3>
-        {/* <img src={download} alt="download" height="32" width="32"/> */}
 
       
 

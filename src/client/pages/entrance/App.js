@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, HashRouter, Route, Link} from 'react';
  import '../../components/style.scss';
 import Nav from "../../components/Nav";
 import Resume from "../../components/Resume";
@@ -99,7 +99,6 @@ class App extends Component {
             ];
     
     return (
-      
       <div className="App">
         <Nav    theme = {this.state.theme}
                 func = {this._handleStyleChange}/>
