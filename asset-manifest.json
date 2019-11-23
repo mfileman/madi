@@ -1,15 +1,15 @@
 {
-  "main.css": "/madi/static/css/main.54e4329e.chunk.css",
-  "main.js": "/madi/static/js/main.e09a0051.chunk.js",
-  "main.js.map": "/madi/static/js/main.e09a0051.chunk.js.map",
+  "main.css": "/madi/static/css/main.db6d6db2.chunk.css",
+  "main.js": "/madi/static/js/main.76b17f8c.chunk.js",
+  "main.js.map": "/madi/static/js/main.76b17f8c.chunk.js.map",
   "runtime~main.js": "/madi/static/js/runtime~main.7591000e.js",
   "runtime~main.js.map": "/madi/static/js/runtime~main.7591000e.js.map",
   "static/js/2.d6a534e5.chunk.js": "/madi/static/js/2.d6a534e5.chunk.js",
   "static/js/2.d6a534e5.chunk.js.map": "/madi/static/js/2.d6a534e5.chunk.js.map",
   "index.html": "/madi/index.html",
-  "precache-manifest.c2faf1219c037e0faf276ef75aa06bde.js": "/madi/precache-manifest.c2faf1219c037e0faf276ef75aa06bde.js",
+  "precache-manifest.996dc3443ce689d8a28af317b6c433c3.js": "/madi/precache-manifest.996dc3443ce689d8a28af317b6c433c3.js",
   "service-worker.js": "/madi/service-worker.js",
-  "static/css/main.54e4329e.chunk.css.map": "/madi/static/css/main.54e4329e.chunk.css.map",
+  "static/css/main.db6d6db2.chunk.css.map": "/madi/static/css/main.db6d6db2.chunk.css.map",
   "static/media/style.scss": "/madi/static/media/Pixel12x10.dd4a3af4.ttf",
-  "static/media/download_icon.png": "/madi/static/media/download_icon.7502d6ff.png"
+  "static/media/socials.png": "/madi/static/media/socials.29133d4e.png"
 }

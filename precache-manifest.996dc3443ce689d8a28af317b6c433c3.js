@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "7502d6ff09d5b5257382abac0cfd86f6",
-    "url": "/madi/static/media/download_icon.7502d6ff.png"
+    "revision": "29133d4e7e704b14f1c370750775d8aa",
+    "url": "/madi/static/media/socials.29133d4e.png"
   },
   {
     "revision": "dd4a3af4ed0e93cc4a3b610cbcf5c9ba",
@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/madi/static/js/runtime~main.7591000e.js"
   },
   {
-    "revision": "ad0b154f3602f77a2d53",
-    "url": "/madi/static/js/main.e09a0051.chunk.js"
+    "revision": "9f2c7f724e8d94799712",
+    "url": "/madi/static/js/main.76b17f8c.chunk.js"
   },
   {
     "revision": "9eee67cf782a38d35aeb",
     "url": "/madi/static/js/2.d6a534e5.chunk.js"
   },
   {
-    "revision": "ad0b154f3602f77a2d53",
-    "url": "/madi/static/css/main.54e4329e.chunk.css"
+    "revision": "9f2c7f724e8d94799712",
+    "url": "/madi/static/css/main.db6d6db2.chunk.css"
   },
   {
-    "revision": "86e4b0bc917701216e06e1f3efd79318",
+    "revision": "8505afae57f6fd4848fce3d2d4b1fe70",
     "url": "/madi/index.html"
   }
 ];
