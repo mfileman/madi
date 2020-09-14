@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/madi/static/js/runtime~main.7591000e.js"
   },
   {
-    "revision": "c855af74244ae93a7c91",
-    "url": "/madi/static/js/main.f67f50c0.chunk.js"
+    "revision": "6e6cd64c5594ca0f361a",
+    "url": "/madi/static/js/main.20773772.chunk.js"
   },
   {
     "revision": "9eee67cf782a38d35aeb",
     "url": "/madi/static/js/2.d6a534e5.chunk.js"
   },
   {
-    "revision": "c855af74244ae93a7c91",
+    "revision": "6e6cd64c5594ca0f361a",
     "url": "/madi/static/css/main.db6d6db2.chunk.css"
   },
   {
-    "revision": "3d9152b9fa4f5ee1fdacfbf7cfd0835d",
+    "revision": "3efd0d2284ea8454a3d28bf0623b5350",
     "url": "/madi/index.html"
   }
 ];
